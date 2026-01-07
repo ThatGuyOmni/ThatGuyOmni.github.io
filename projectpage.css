@@ -1,0 +1,284 @@
+ @font-face {
+  font-family: 'Cinzel';
+  src: url(Cinzel-VariableFont_wght.ttf);
+ }
+
+body{
+  background-size: cover;
+  margin: 0px;
+  color: #ffffff;
+  font-family: 'Cinzel';
+  background-image: url(Img/PageBackground.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+nav{
+  background-color: #000000;
+  height: 100px;
+  width: 100%;
+
+}
+
+.navbar img{
+  margin: 0;
+  padding-top: 4px;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.Name{
+  display: inline-block;
+  position: absolute;
+  margin: 0px;
+  padding-left: 10PX;
+}
+
+
+.navbar H1{
+  background-color: #cc0000;
+  width: 75px;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  display: block;
+}
+
+.navbar H2{
+  background-color: #cc0000;
+  width: 225px;
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  display: block;
+}
+.background{
+  position: relative;
+  display: block;
+  float: right;
+  background-image: url(Img/HeaderBackground.png);
+  height: 100px;
+  width: 900px;
+}
+
+.navbar ul{
+  list-style: none;
+  overflow: hidden;
+  display: inline;
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+
+}
+.navbar a{
+  font-size: 36px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000ab;
+  display: block;
+  text-align: center;
+  width: max-content;
+  margin: 5px;
+  margin-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  position: relative;
+
+}
+
+.navbar a:hover{
+  color: #a1a1a1;
+}
+
+.navbar li{
+  float: right;
+  padding:0 7px; 
+  position:relative;
+
+}
+
+.navbar ul li:not(:first-child)::after{
+  content:""; 
+  border: 1px solid #ffffff;
+  border-width: 2px;
+  position: absolute; 
+  right: -3px; 
+  top: 0; 
+  margin-top: 20px;
+  height: 70%;
+}
+
+.projectheading{
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.projectdetails{
+  height: 940px;
+  width: 530px;
+  outline-color: #cc0000;
+  outline-style: solid;
+  outline-width: 3px;
+  margin-right: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectdetailsheading{
+text-align: center;
+}
+
+.projectdetailstext{
+  text-align: left;
+}
+
+.projectdetailstext h1{
+  margin-left: 10px;
+  font-size: 32px;
+}
+
+.projectdetailstext h2{
+  margin-left: 10px;
+  margin-top: 40px;
+  font-size: 26px;
+}
+
+.projectdetailsfooter{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.projectdetailsfooter img{
+  margin: auto;
+}
+
+.coretasks{
+  height: 170px;
+  width: 320px;
+  outline-color: #cc0000;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.coretasks h2{
+  margin: 5px;
+}
+
+.coretasks p{
+  margin: 10px;
+}
+
+.projectvideooverview{
+  width: 1280px;
+}
+
+.projectvideo{
+  height: 720px;
+  width: inherit;
+  outline-color: #cc0000;
+  outline-style: solid;
+  outline-width: 3px;
+  margin-left: 0.5%;
+}
+
+.projectintrotext h1{
+  margin: 5px;
+}
+
+.projectintrotext p{
+  margin: 5px;
+}
+
+
+.projectsection{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px;
+  margin-bottom: 150px;
+}
+
+.sectiontext{
+  width: 500px;
+}
+
+.sectiongallery img{
+  outline-color: #cc0000;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+.slideshow-container {
+  max-width: 1280px;
+  max-height: 720px;
+  position: relative;
+  margin: auto;
+  display: flex;
+}
+
+.slideshow-container img {
+  width: 1280px;
+  height: 720px;
+}
+
+
+.buttoncontainer{
+  opacity: 0;
+  transition: opacity 0.25s;
+  position: absolute;
+    z-index: 1;
+    width: 1280px;
+    height: 720px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+.buttoncontainer:hover{
+  opacity: 1;
+}
+
+.prev, .next {
+  cursor: pointer;
+  width: 50px;
+  height: inherit;
+  color: white;
+    display: flex;
+    font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dotbar{
+  display: flex;
+  column-gap: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  bottom: -4rem;
+}
+
+.dot{
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border: 0.2rem solid #ffffff;
+  background-color: #ffffff00;
+  rotate: 45deg;
+  opacity: 0.85;
+  transition: all ease 0.15s;
+}
+
+
+
+.active, .dot:hover {
+  background-color: #ffffff;
+  opacity: 1;
+}
