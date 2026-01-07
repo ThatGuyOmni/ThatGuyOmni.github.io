@@ -118,7 +118,7 @@ nav{
   align-items: center;
   justify-content: center;
   margin-top: 1%;
-  
+  margin-bottom: 1%;
 }
 
 .projectitem {
@@ -219,4 +219,5 @@ a{
 
 .projectbutton p{
   font-size: 40px;
+
 }
