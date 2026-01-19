@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buccaneer Brawl</title>
+    <link rel="stylesheet" href="ProjectPage.css">
+    <link rel="icon" href="Img/flowerthang.png">
+</head>
+<body>
+ <nav class="navbar">
+  <img src="Img/flowerthang.png" width="120" height="90" alt="Website Icon">
+  <div class="Name">
+  <h1>KIT</h1>
+  <h2>BRODERICK</h2>
+  </div>
+  <div class="background">
+    <ul>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+
+            <li><a href="index.html">HOME</a></li>
+    </ul>
+    </div>
+</nav>
+<main>
+<div class="projectheading">
+    <div class="projectdetails">
+        <div class="projectdetailsheading">
+        <img src="Img/Buccaneer Brawl Logo No Background.png" alt="Project Logo">
+        <div class="projectdetailstext">
+            <h1>PROJECT - BUCCANEER BRAWL</h1>
+            <h2>ROLE: UI/UX DESIGNER</h2>
+            <h2>PROJECT-LENGTH: 4.5 WEEKS</h2>
+            <h2>TEAM-SIZE: 8</h2>
+            <h2>GENRE:  TURN-BASED STRATEGY</h2>
+            <a href=""><div class="projectlink"><p>Download Unavailable</p></div></a>
+        </div>
+        </div>
+        <div class="projectdetailsfooter">
+            <img src="Img/UE5LOGO.png" width="160" height="160" alt="Unreal Engine Logo">
+            <div class="coretasks">
+                <h2>Core Tasks</h2>
+                <div class="taskpoints">
+                <p>-UI Research</p>
+                <p>-Interface Design</p>
+                <p>-User Journey Design</p>
+                <p>-UI Implementation & Functionality</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="projectvideooverview">
+        <div class="projectvideo">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/c229KbMqOtM?si=R0MVwmJcC6aElSEm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="projectintrotext">
+            <h1>OVERVIEW</h1>
+            <p>Buccaneer Brawl is a 3v3 turn-based strategy game built in Unreal Engine 5. The project consists of two rounds of combat where the player takes control of three characters all with different actions and must defeat the enemies to win.</p>
+            <p>This project was completed as a part of my Rapid Games Design module where I was the UI/UX designer in a team of 8. In this role I wore many hats; my primary workload was the design of the user interface and the user’s journey when interacting with the widgets. Besides wireframes and IA diagrams, in the later stages of development my work moved more towards the engine where I implemented art assets provided by our teams UI artist and created the UIs functionality though unreal engine’s blueprints.</p>
+          </div>
+    </div>
+</div>
+
+<div class="projectcategories"></div>
+
+<div class="projectcategory">
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>In-Game HUD</h1>
+      <p>The HUD is separated into three panels; the Character panel, Effects panel and the Actions Panel. I felt that the separation of these panels was important as it made content digestion easier for players when first learning the project. Multiple iterations of the HUD were done throughout the project either due to user feedback or a change in design direction. For example, during early development the idea of “mana” or some type of points used to cast special abilities was floated around and this was incorporated into the early HUD diagrams with character vitals containing a blue bar to represent “mana”, however, that idea was later scrapped so the wireframes were changed to accommodate the mechanics.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow1" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/CH IG.png">
+          <p>In-Game Version</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfhuditeration1.png">
+          <p>Initial Version</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfhuditeration2.png">
+          <p>Iterated Version</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/BB-HUDFINALWF.png">
+          <p>Final Version</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+          <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+          <span class="dot" onclick="currentSlide(4, slideshow1)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>TOOLTIPS</h1>
+      <p>Tool tips were used to convey information about specific attacks and effects. Since this project was a vertical slice, it meant that we didn’t have the luxury of intuitively teaching the player what certain mechanics did. In the end we settled on giving the player the ability to find information out by hovering over a widget. These features were condensed into a title and a description, so that it was easily digestible to not interrupt the flow of gameplay while still providing knowledge on what they were looking at.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow3" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bbwftooltipsactions.png">
+          <p>Action Tooltip</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwftooltipseffects.png">
+          <p>Effect Tooltip</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow3)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>CHARACTERS</h1>
+      <p>The characters panel contains three character vital bars which relate to the characters that the player controls. Each vital bar has a progress bar which is linked to the character’s health, and a profile image of the character that the vital bar relates to. Using a profile image to convey what bar represented what character was chosen over character names because it reduced the number of elements in the character panel and nowhere in the project would the player be introduced to the names of the characters so they wouldn’t be able to link a name to a character in their head.</p>
+
+      <p>When a character is selected, their vital bar is brought to the top of the panel and increased in size to provide a visual distinction between the selected and unselected characters, the in-game character will also gain an orange arrow that hovers above them and an orange circle below their feet. It was important to include multiple indicators for the selected character because a character could only do one action per turn so if the player got confused and accidentally used the wrong character then it would cause a lot of frustration of them.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow4" class="slideshow-container">
+
+        <div class="mySlides">
+          <img src="Img/bbwfcharacterunselected.png">
+          <p>Character Panel</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfcharacterselected.png">
+          <p>Character Selected</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfcharactervital.png">
+          <p>Character Vitals</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow4)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow4)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow4)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow4)"></span> 
+          <span class="dot" onclick="currentSlide(3, slideshow4)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>STATUS EFFECTS</h1>
+      <p>Status effects play an important part of the combat game loop allowing the player and enemy characters to extend an action over multiple turns. Each character can have a max of three effect on them at once and all current effects can be seen on a character when they are selected. </p>
+      <P>When a character gains a status effect it can be seen in the status effect section of the HUD when they are selected. A status effect consists of a distinct image so that the player can easily identify at a glance and a number on the bottom left to convey how many turns the effect will last. Tooltips are also used to provide additional information to the player while keeping the look and feel of the HUD streamlined, instead of bombarding the player with information that isn’t relevant.</P>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow5" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bbwfeffectpanel.png">
+          <p>Status Effect Panel</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfeffecticon.png">
+          <p>Status Effect Icon</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow5)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow5)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow5)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>ACTIONS</h1>
+      <p>A character has four actions, three of them being unique and the other being a basic attack. To represent this in game the actions are placed into a two-by-two grid separated with a border and titled actions. Depending what character, the player has selected, even enemy characters, that selected characters actions will be displayed. </p>
+
+      <P>Furthermore, about the action buttons, to convey when the player’s cursor is hovering over a button it will decrease the overall brightness to contrast those around it. When a player has selected one of the actions, the selected button’s border will turn a pinkish shade of red and if the player commits to that action, it will stay that way until the characters next turn. When the player has either selected or committed to an action the other buttons will have their backgrounds turn a deep opaque shade of red, which is done to convey that they are unable to be pressed.</P>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow6" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bbwfactionpanel.png">
+          <p>Action Panel</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfactionbutton.png">
+          <p>Action Button</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfactionhover.png">
+          <p>Action Hover and Selected</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfactiondeactive.png">
+          <p>Action Unavailable</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow6)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow6)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow6)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow6)"></span> 
+          <span class="dot" onclick="currentSlide(3, slideshow6)"></span> 
+          <span class="dot" onclick="currentSlide(4, slideshow6)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>TUTORIAL</h1>
+      <p>To teach the player the basics of combat the project uses an explicit tutorial where the game is broken into several slides that the player can go back and forth through, the addition of a back button was done to mitigate the chance of the player accidentally double clicking the forwards button and skipping a slide and gives them the option to return to a previous slide at any point during the tutorial.</p>
+      <P>Each slide also interacts with the game, depending on what slide is currently present on the screen. For example, when talking about the player’s characters it will show them all with a selection arrow above their heads.</P>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow7" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bbwftutorial.png">
+          <p>In-Game Version</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow7)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow7)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow7)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>ACTION POPUP</h1>
+      <p>During testing we realised that users did not properly understand what effect their actions had on the enemy. When an enemy was damaged then the health bar above their head would decrease, however, after testing it was clear that it wasn’t enough to convey what was happening so the team decided that an “action popup” would help provide additional information to the player.</p>
+      <P>This popup would appear anytime a character was hit, no matter if it was friendly or an enemy. The popup would then display in text how much damage that character received and if it was a critical or not.</P>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow8" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bbwfactionpopup.png">
+          <p>Action Popup</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow8)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow8)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow8)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>MAIN MENU</h1>
+      <p>As with the in-game HUD, multiple versions of the main menu were created. These wireframes were then pitched to the team in a meeting to decide what version we would go for. However, as the project progressed iterations were made to the main menu which makes it vastly different to the in-game version. For example, we wanted a more integrated main menu with the buttons being placed over the saloon doors so that when the player pressed play the camera would move through the bar into the game. This also resulted in us scoping down the main menu with the only buttons remaining being Start, Credits and Exit.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow9" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bbwfmainmenu.png">
+          <p>Main Menu</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow9)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow9)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow9)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>OPTIONS MENU</h1>
+      <p>In-game the options menu is dietetically placed onto three crates. </p>
+      <p>The top crate has the options button, which is represented by a cog icon, when the game beings the options menu is hidden until the player presses the option button which makes the content on the other two crates visible.</p>
+      <p>The bottom left crate is the back button, when the player enters a submenu such as the video options menu or the game options menu then the player can press the back button to go back.</p>
+      <p>The bottom right crate contains the menu content of the current menu the player is looking at.</p>
+      <p>There are three menus that the player has access to which are the video, audio and game options. The most notable menu is the game options menu contains colour blindness settings where the player can choose from several colour blindness modes and alter the mode’s sensitivity. A grid of four boxes is placed at the bottom containing red, blue, green and yellow so that the player can see how the different modes effect colours as the main menu’s colour palette is mostly shades of browns and blues so may not be the most accurate portrayal of how each mode would look.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow10" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bbwfoptionmenu.png">
+          <p>Options Menu</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfoptionspanel.png">
+          <p>Options Panel</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfgameoptions.png">
+          <p>Game Options</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bbwfvideooptions.png">
+          <p>Video Options</p>
+        </div>
+        
+        <div class="mySlides">
+          <img src="Img/bbwfaudiooptions.png">
+          <p>Audio Options</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow10)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow10)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow10)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow10)"></span> 
+          <span class="dot" onclick="currentSlide(3, slideshow10)"></span> 
+          <span class="dot" onclick="currentSlide(4, slideshow10)"></span> 
+          <span class="dot" onclick="currentSlide(4, slideshow10)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+<script>
+    var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+var slideshow3 = document.getElementById("slideshow3");
+slideshow3.currentSlideIndex = 1;
+showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+var slideshow4 = document.getElementById("slideshow4");
+slideshow4.currentSlideIndex = 1;
+showSlides(slideshow4.currentSlideIndex, slideshow4);
+
+var slideshow5 = document.getElementById("slideshow5");
+slideshow5.currentSlideIndex = 1;
+showSlides(slideshow5.currentSlideIndex, slideshow5);
+
+var slideshow6 = document.getElementById("slideshow6");
+slideshow6.currentSlideIndex = 1;
+showSlides(slideshow6.currentSlideIndex, slideshow6);
+
+var slideshow7 = document.getElementById("slideshow7");
+slideshow7.currentSlideIndex = 1;
+showSlides(slideshow7.currentSlideIndex, slideshow7);
+
+var slideshow8 = document.getElementById("slideshow8");
+slideshow8.currentSlideIndex = 1;
+showSlides(slideshow8.currentSlideIndex, slideshow8);
+
+var slideshow9 = document.getElementById("slideshow9");
+slideshow9.currentSlideIndex = 1;
+showSlides(slideshow9.currentSlideIndex, slideshow9);
+
+var slideshow10 = document.getElementById("slideshow10");
+slideshow10.currentSlideIndex = 1;
+showSlides(slideshow10.currentSlideIndex, slideshow10);
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+
+</main>
+</body>
+</html>

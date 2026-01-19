@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potion Commotion</title>
+    <link rel="stylesheet" href="projectpage.css">
+    <link rel="icon" href="Img/flowerthang.png">
+</head>
+<body>
+ <nav class="navbar">
+  <img src="Img/flowerthang.png" width="120" height="90" alt="Website Icon">
+  <div class="Name">
+  <h1>KIT</h1>
+  <h2>BRODERICK</h2>
+  </div>
+  <div class="background">
+    <ul>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+
+            <li><a href="index.html">HOME</a></li>
+    </ul>
+    </div>
+</nav>
+<main>
+<div class="projectheading">
+    <div class="projectdetails">
+        <div class="projectdetailsheading">
+        <img src="Img/HDSD/hdsdlogo.png" alt="Project Logo">
+        <div class="projectdetailstext">
+            <h1>PROJECT - Corvette Sabotage</h1>
+            <h2>PROJECT-LENGTH: 4.5 WEEKS</h2>
+            <h2>GENRE:  Third-Person Shooter</h2>
+            <a href="hdslidedeck.pdf"><div class="projectlink"><p>Download Slide Deck</p></div></a>
+        </div>
+        </div>
+        <div class="projectdetailsfooter">
+          <img src="Img/figmalogo.png" width="160" height="160" alt="figma logo">
+          <img src="Img/mirologo.png" width="160" height="160" alt="miro logo">
+          <img src="Img/pplogo.png" width="160" height="160" alt="power point logo">
+        </div>
+
+    </div>
+    <div class="projectvideooverview">
+        <div class="projectvideo">
+        <div id="slideshow1" class="slideshow-container">
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide1.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide2.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide3.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide4.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide6.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide5.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide8.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide7.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide9.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide10.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide11.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide12.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide13.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide14.PNG">
+          </div>
+
+          <div class="mySlides">
+            <img src="Img/HDSD/HDSDSlide15.PNG">
+          </div>
+
+          <div class="buttoncontainer">
+            <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+          </div>
+        </div>
+        <div class="projectintrotext">
+            <h1>OVERVIEW</h1>
+            <p>For my module “Gameplay Systems Design” I was tasked to create both a Game Design Document and a Slide Deck which had to introduce a new system into an existing game. </p>
+            <p>This Slide Deck introduced a new mission into Helldivers 2 which also came with new mechanics such as a new stratagem, objective and hazards. </p>
+            <p>In the Mission: Corvette Sabotage the player must board an automaton supply corvette, which is on its way to reinforce the frontlines, download sensitive data from its terminal then explode its reactor. </p>
+            <p>To help with this, the player is also given a new “objective critical stratagem” which only appears in this mission. This new stratagem is the “Bidirectional Grapple Hook” which can be called down when the player is near the objective, when called the hook will plant into the ground and shoot a tether onto the nearest grapple point so that the player has a way to reach the corvette from the ground.</p>
+            <p>There were two main driving forces for this idea of an objective in the air. Firstly, I just enjoy verticality being using as a challenge in gameplay. Secondly, this mission was designed in response to the “Into The Unjust” update which added “Hive Worlds”. A few people complained about these “Hive Worlds” because they contained underground portions which restricted players from calling stratagems, I enjoyed this idea however I personally didn’t like outright restriction and preferred the idea of designing something the dissuaded the player. </p>
+            <p>Originally, the idea was to give the corvette health so that if a certain part took too much damage then it would explode into flame, with enough parts being destroyed before data retrieval resulting in a mission fail as the corvette explodes. However, I wasn’t satisfied with this as I felt it was very prone to griefing where another player could purposefully ruin the fun for others. </p>
+            <p>Iterating on my concept I landed on the idea of two hazards: the fuel lines and the turbines. The fuel lines were bright red (which often connotes an explosive object) hoses that stretch across areas of the corvette which if enough damage is delt at a high enough armour penetration would cause it to explode and create an area of denial for player with massive flames that wouldn’t go out. It is worth noting that the environment offers climbable terrain which means that the flames only remove one pathway and do not completely block the player.</p>
+            <p>The turbines refers to the four propellers on the corvette (two on each side), these turbines can be damaged and if so, will cause the corvette to tilt towards the damage side. This was done to work with Helldivers 2’s ragdoll mechanics where slopes make it easier for the player to fall over, most likely resulting in them falling off the side of the corvette. However, it is important to note that if all turbines are damaged it will not result in the corvette falling. </p>
+            <p>I believe these two features achieve my idea as they do not directly remove stratagems from play but instead make the environment more hazardous for the player if they are not careful with powerful weapons/stratagems.</p>
+           
+          </div>
+    </div>
+</div>
+
+<script>
+    var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+
+</main>
+</body>
+</html>
