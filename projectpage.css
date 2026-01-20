@@ -254,7 +254,7 @@ a{
 
 .slideshow-container img {
   max-width: 1280px;
-  height: 720px;
+  max-height: 720px;
 }
 
 .slideshow-container p{
@@ -318,4 +318,5 @@ a{
 .active, .dot:hover {
   background-color: #ffffff;
   opacity: 1;
+
 }
