@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncy Guyz</title>
+    <link rel="stylesheet" href="projectpage.css">
+    <link rel="icon" href="Img/flowerthang.png">
+</head>
+<body>
+ <nav class="navbar">
+  <img src="Img/flowerthang.png" width="120" height="90" alt="Website Icon">
+  <div class="Name">
+  <h1>KIT</h1>
+  <h2>BRODERICK</h2>
+  </div>
+  <div class="background">
+    <ul>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+
+            <li><a href="index.html">HOME</a></li>
+    </ul>
+    </div>
+</nav>
+<main>
+<div class="projectheading">
+    <div class="projectdetails">
+        <div class="projectdetailsheading">
+        <img src="Img/bclogo.png" alt="Project Logo">
+        <div class="projectdetailstext">
+            <h1>PROJECT - BOUNCY GUYZ</h1>
+            <h2>ROLE: UI/UX DESIGNER</h2>
+            <h2>PROJECT-LENGTH: 1 WEEK</h2>
+            <h2>TEAM-SIZE: 3</h2>
+            <h2>GENRE:  PLATFORMER</h2>
+            <a href="https://morg-harris.itch.io/bouncy-guyz"><div class="projectlink"><p>Download Project</p></div></a>
+        </div>
+        </div>
+        <div class="projectdetailsfooter">
+            <img src="Img/UE5LOGO.png" width="160" height="160" alt="Unreal Engine Logo">
+            <div class="coretasks">
+                <h2>Core Tasks</h2>
+                <div class="taskpoints">
+                <p>-UI/UX Design</p>
+                <p>-Accessibility Design</p>
+                <p>-UE5 Blueprints</p>
+                <p>-Asset Implementation</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="projectvideooverview">
+        <div class="projectvideo">
+            <iframe width="1280" height="720" src="https://youtu.be/cWzatkolBPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="projectintrotext">
+            <h1>OVERVIEW</h1>
+            <p>Bouncy Guyz is a party platformer that was done as apart of and won the Tencent Games 4 All game jam. This jam was about accessibility within games, with our project focusing on input features. The way me and my team decided this was to build input accessibility into the project’s foundation by simplifying the control scheme to only two buttons (move left and move right) and allowing the players to rebind their controls before each game. </p>
+            <p>The main goal for this project was to create a game that was a “pick up and play” experience, mechanically simplistic but enjoyable through engaging feedback. </p>
+          </div>
+    </div>
+</div>
+
+<div class="projectcategory">
+
+    <div class="projectsection">
+    <div class="sectiontext">
+      <h1>INITIAL CONCEPT</h1>
+      <p>During the early portion of development my team threw around a few idea, however, my idea was chosen in the end. To meet the Jam's theme of community my idea was to create a 1-4 player endless platformer which focused on input accessibility, this would be done by having a simple control scheme and providing key rebinding features to allow players to set their inputs to whatever feels comfortable.</p>
+      <p>Throughout development the project change with the removal of some initial ideas such as hazards and pushing a bigger focus on the community aspect. However, the core ideas of input accessibility were constantly developed throughout with the inclusion of additional accessibility areas such as cognitive and a settings menu which allowed us to include audio/video options.</p>
+      <p>To help guide our development our team used resources such as the “accessible games initiative” website as they strive for accessibility features in games. They have a section on their website which breaks down these features into “tags” allowing us to better understand them and implement them into the project.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow8" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bcinitalconcept.png">
+          <p>Initial Concept</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>Typography and UI style</h1>
+      <p>The font that was chosen for the game is called “OpenDyslexic” which is designed to combat some of the common symptoms of dyslexia. Even though this project was primarily focusing on input accessibility, the team believe that if we had the ability to add additional accessibility options into the project then we should. This font also fitted the art style of the game being very rounded and slightly cartoonish which allowed the inclusion of it, without ruining the style of the game.</p>
+      <p>The overall UI style was designed to be cartoonish to fit the assets we had available. Going with rounded shapes and pastel colours also helped fit the jam’s theme of community as we wanted to create a family friendly party game that was accessible to all ages. </p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow8" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bcfont.PNG">
+          <p>OpenDyslexic Font</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>Player Vitals</h1>
+      <p>The Player Vitals contain how many hearts the player has as well as an image render of the character they chose. Each Vital Bar is displayed on the sides of the screen so that they don’t intrude on the player’s gameplay or block visibility of hazards. As well as this each Vital Bar is set either red, blue, green or yellow depending on how many players there are. The use of colour with an image of their character helps new player’s identify which widget relates to them.</p>
+      <p>Feedback was also taken into account when developing the Vitals. Obviously sound helps convey actions to the player, however, the addition of small animations provides extra affordance to the player on how that action effected them. For example, when the player gets hit, they take one damage and one of their hearts does a little wobble as the heart icon changes to an empty version. If the player looses all of their hearts, then their character image will be replaced with a skull.</p>
+      <p>Initially planned to be anchored to the top of the screen with the amount of coins the player has collected displayed, however, a good point made by one of my team members was that the inclusion of a coin counter would incentivise players to fight each other to see who collected the most coins. Competitiveness is common in these types of games, but with this project’s focus on community it was decided to hide how many coins the player has collected until the end game screen appeared.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow1" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bcingamehud.png">
+          <p>In-Game Version</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcinitalhud.png">
+          <p>Initial Vitals</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bciteratedhud.png">
+          <p>Iterated Vitals</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcdamagestoryboard1.png">
+          <p>Player Damage Storyboard 1</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcdamagestoryboard2.png">
+          <p>Player Damage Storyboard 2</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcdamagestoryboard3.png">
+          <p>Player Damage Storyboard 3</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcdamagestoryboard4.png">
+          <p>Player Damage Storyboard 4</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcdeathstoryboard1.png">
+          <p>Player Death Storyboard 1</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcdeathstoryboard2.png">
+          <p>Player Death Storyboard 2</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcdeathstoryboard3.png">
+          <p>Player Death Storyboard 3</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcdeathstoryboard4.png">
+          <p>Player Death Storyboard 4</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow1)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow1)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow1)"></span> 
+          <span class="dot" onclick="currentSlide(3, slideshow1)"></span> 
+          <span class="dot" onclick="currentSlide(4, slideshow1)"></span>
+          <span class="dot" onclick="currentSlide(5, slideshow1)"></span>
+          <span class="dot" onclick="currentSlide(6, slideshow1)"></span>
+          <span class="dot" onclick="currentSlide(7, slideshow1)"></span>
+          <span class="dot" onclick="currentSlide(8, slideshow1)"></span>
+          <span class="dot" onclick="currentSlide(9, slideshow1)"></span>
+          <span class="dot" onclick="currentSlide(10, slideshow1)"></span>
+          <span class="dot" onclick="currentSlide(11, slideshow1)"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>PLAYER SELECT</h1>
+      <p>The Player Select screen appears right after the player select how many players playing. Depending on how many players will depend how many select widgets appear. This screen allows players to set their inputs before playing the game and select what character they would like to play as.</p>
+      <p>When the Player Select screen appears it will require the player press what they want their left input to be, pressing it once will make it appear, but they will need to press it again to confirm in case they accidentally press the wrong input. </p>
+      <p>After both inputs are set then the player will be given a selection of characters to choose from. This assists cognitively with the player’s association with the character, as by allowing the player to pick a character they will have an easier time looking for which Vital bar relates to them.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow2" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bcingameselect.png">
+          <p>In-Game Version</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcplayerselectscreen.png">
+          <p>Wireframe</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcplayerselectscreenstoryboard1.png">
+          <p>Storyboard 1</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcplayerselectscreenstoryboard2.png">
+          <p>Storyboard 2</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcplayerselectscreenstoryboard3.png">
+          <p>Storyboard 3</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcplayerselectscreenstoryboard4.png">
+          <p>Storyboard 4</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcplayerselectscreenstoryboard5.png">
+          <p>Storyboard 5</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow2)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow2)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow2)"></span>
+          <span class="dot" onclick="currentSlide(3, slideshow2)"></span> 
+          <span class="dot" onclick="currentSlide(4, slideshow2)"></span> 
+          <span class="dot" onclick="currentSlide(5, slideshow2)"></span> 
+          <span class="dot" onclick="currentSlide(6, slideshow2)"></span> 
+          <span class="dot" onclick="currentSlide(7, slideshow2)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>START UP</h1>
+      <p>The start screen adds a buffer between the main menu and the gameplay; this gives players breathing room to get ready before playing instead of just jumping them right into a countdown which could make them feel either rushed or unprepared.</p>
+      <p>Additionally, the inclusion of an input reminder widget was added which displays all of the player’s inputs in a row. This reminds the players what their movement inputs are before starting the game.</p>
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow3" class="slideshow-container">
+
+        <div class="mySlides">
+          <img src="Img/bcingamesetup.png">
+          <p>In-Game Version</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcsetup.png">
+          <p>Wireframe</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow3)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow3)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow3)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow3)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>PAUSE MENU</h1>
+      <p>The pause menu gives the players the option to either return to the main menu or quit the game entirely. However, similar to the Start screen an input reminder has been added to each of the player Vital bars. </p>
+      <p>This was done for similar reason to the Start screen because if the players pause the game we the developers don’t know how long that game has been paused for, maybe someone has gone to grab a drink or use the restroom. So, by the time the game is resumed it could have been 10 minutes and by that time some players might need a little reminder of what their inputs are, especially if when the game is resumed their immediately pushed back into active gameplay.</p>
+  
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow4" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bcingamepause.png">
+          <p>In-Game Version</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcpausemenu.png">
+          <p>Wireframe</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow4)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow4)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow4)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow4)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>GAME COUNTDOWN</h1>
+      <p>In addition to the Start screen, the inclusion of a countdown was wanted to give affordance to the players that the game is starting. Even to someone who doesn’t play games a countdown signals to people that they should get ready. The Start screen works as a passive buffer between gameplay whereas the countdown operates as an active buffer, these in between points allow the game to ease the player into gameplay.  </p>
+
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow5" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard1.png">
+          <p>Countdown Storyboard 1</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard2.png">
+          <p>Countdown Storyboard 2</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard3.png">
+          <p>Countdown Storyboard 3</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard4.png">
+          <p>Countdown Storyboard 4</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard5.png">
+          <p>Countdown Storyboard 5</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard6.png">
+          <p>Countdown Storyboard 6</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard7.png">
+          <p>Countdown Storyboard 7</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard8.png">
+          <p>Countdown Storyboard 8</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bccountdownstoryboard9.png">
+          <p>Countdown Storyboard 9</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow5)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow5)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(3, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(4, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(5, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(6, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(7, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(8, slideshow5)"></span> 
+          <span class="dot" onclick="currentSlide(9, slideshow5)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projectsection">
+    <div class="sectiontext">
+      <h1>MAIN MENU</h1>
+      <p>The main menu allows the player to start the game, enter the options menu which allows the changing of any video/audio options, as well as the ability to quit the game.</p>
+      <p>The choice to use a horizontal alignment for the buttons was to make it easier for the player’s input. Since they can only use left and right to navigate, having a horizontal alignment provides better feedback than a vertical alignment. This is because using a vertical alignment would result in left and right inputs being used to up and down along the buttons, which doesn’t feel as intuitive compared to pressing the right input to move right on the buttons. </p>
+ 
+    </div>
+    <div class="sectiongallery">
+      <div id="slideshow6" class="slideshow-container">
+        <div class="mySlides">
+          <img src="Img/bcingamemenu.png">
+          <p>In-Game Version</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="Img/bcmainmenu.png">
+          <p>Wireframe</p>
+        </div>
+
+        <div class="buttoncontainer">
+          <a class="prev" onclick="plusSlides(-1,slideshow6)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, slideshow6)">&#10095;</a>
+        </div>
+
+        <div class="dotbar">
+          <span class="dot" onclick="currentSlide(1, slideshow6)"></span> 
+          <span class="dot" onclick="currentSlide(2, slideshow6)"></span> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+    var slideshow1 = document.getElementById("slideshow1");
+slideshow1.currentSlideIndex = 1;
+showSlides(slideshow1.currentSlideIndex, slideshow1);
+
+    var slideshow2 = document.getElementById("slideshow2");
+slideshow2.currentSlideIndex = 1;
+showSlides(slideshow2.currentSlideIndex, slideshow2);
+
+var slideshow3 = document.getElementById("slideshow3");
+slideshow3.currentSlideIndex = 1;
+showSlides(slideshow3.currentSlideIndex, slideshow3);
+
+var slideshow4 = document.getElementById("slideshow4");
+slideshow4.currentSlideIndex = 1;
+showSlides(slideshow4.currentSlideIndex, slideshow4);
+
+var slideshow5 = document.getElementById("slideshow5");
+slideshow5.currentSlideIndex = 1;
+showSlides(slideshow5.currentSlideIndex, slideshow5);
+
+var slideshow6 = document.getElementById("slideshow6");
+slideshow6.currentSlideIndex = 1;
+showSlides(slideshow6.currentSlideIndex, slideshow6);
+
+var slideshow7 = document.getElementById("slideshow7");
+slideshow7.currentSlideIndex = 1;
+showSlides(slideshow7.currentSlideIndex, slideshow7);
+
+var slideshow8 = document.getElementById("slideshow8");
+slideshow8.currentSlideIndex = 1;
+showSlides(slideshow8.currentSlideIndex, slideshow8);
+
+function plusSlides(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex += n, slideshow);
+}
+
+function currentSlide(n, slideshow) {
+  showSlides(slideshow.currentSlideIndex = n, slideshow);
+}
+
+function showSlides(n, slideshow) {
+
+  var i;
+  var slides = slideshow.getElementsByClassName("mySlides");
+  var dots = slideshow.getElementsByClassName("dot");
+  if (n > slides.length) {slideshow.currentSlideIndex = 1}    
+  if (n < 1) {slideshow.currentSlideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideshow.currentSlideIndex-1].style.display = "block";  
+  dots[slideshow.currentSlideIndex-1].className += " active";
+}
+</script>
+
+</main>
+</body>
+</html>
