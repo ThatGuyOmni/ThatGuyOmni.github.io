@@ -23,6 +23,7 @@ video{
   background-position: absolute;
   z-index: 10;
   object-fit: fill;
+  pointer-events: none;
 }
 
 
