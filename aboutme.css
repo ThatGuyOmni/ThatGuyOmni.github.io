@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'Instrument';
+  src: url(InriaSerif-Regular.ttf);
+ }
+
+ @font-face {
+  font-family: 'Lexend';
+  src: url(Lexend-Light.ttf);
+ }
+
+body{
+  margin: 0px;
+  color: #ffffff;
+  background-color: #0F0F11;
+  font-family: 'Instrument';
+    letter-spacing: 3%;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.divider{
+  width: 100%;
+  height: 0.16vw;
+  background-color: #ffffff;
+}
+
+nav{
+
+  z-index: 20;
+  width: 100%;
+  background-color: #0F0F11;
+}
+
+.navbar{
+  height: 1.88vw;
+  background-color: #0F0F11;
+}
+
+.navbar img{
+  position: absolute;
+  padding-left: 0.52vw;;
+}
+
+.navbuttons{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbuttons ul{
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.navbuttons li{
+  margin-left: 1.04vw;
+  margin-right: 1.04vw;
+}
+
+.navbuttons a{
+  display: flex;
+  justify-content: center;
+  font-size: 0.94vw;
+  width: 4.69vw;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "lexend";
+  margin: auto;
+}
+
+.navbuttons a:hover{
+  color: #EE0000;
+}
+
+.navbuttons a::after, .navbuttons a::before{
+  content: "";
+  background-color: #EE0000;
+  height: 0px;
+  width: 0.21vw;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.2s;
+}
+
+.navbuttons a:hover::after{
+  height: 1.15vw;
+}
+.navbuttons a:hover::before{
+  height: 1.15vw;
+}
+
+
+main{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.header{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+
+}
+
+.header .Name{
+  display: inline-block;
+  width: 32.40vw;
+  height: 8.17vw;
+  margin: 0px;
+  padding-left: 0.52vw;
+}
+
+
+.header H1{
+  font-family: 'instrument';
+  font-size: 70px;
+  margin: 0%;
+
+}
+.header H2{
+  font-family: 'instrument';
+  font-size: 70px;
+  margin: 0%;
+  line-height: 60px;
+  float: right;
+}
+
+.header img{
+  margin: 0;
+  height: 128px;
+  max-width: 128px;
+  margin-left: 35px;
+}
+
+.cvimghover{
+  display: none;
+}
+
+.cv:hover .cvimg{
+  display: none;
+}
+.cv:hover .cvimghover{
+  display: block;
+}
+
+.content{
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.abouttext{
+  margin: 0;
+  width: 400px;
+  font-size: 21px;
+  padding-left: 70px;
+  font-family: 'lexend';
+}
+
+.tags{
+  width: 1024px;
+}
+
+.toptags{
+  display: flex;
+  gap: 24px;
+  margin-bottom: 70px;
+}
+
+.bottomtags{
+  display: flex;
+  gap: 24px;
+}
+
+.tagtitle{
+  height: 70px;
+  width: 500px;
+  border: #EE0000 solid 5px;
+  border-top: #EE0000 solid 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Instrument';
+  font-size: 60px;
+}
+
+.taggrid{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.tag{
+  height: 32px;
+  border: #EE0000 solid 2px;
+  border-radius: 8px;
+  corner-shape: bevel;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag p{
+  font-family: 'lexend';
+  font-size: 15px;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}

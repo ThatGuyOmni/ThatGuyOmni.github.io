@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'Instrument';
+  src: url(InriaSerif-Regular.ttf);
+ }
+
+ @font-face {
+  font-family: 'Lexend';
+  src: url(Lexend-Light.ttf);
+ }
+
+body{
+  margin: 0px;
+  color: #ffffff;
+  background-color: #0F0F11;
+  font-family: 'Instrument';
+    letter-spacing: 3%;
+    overflow: hidden;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.divider{
+  width: 100%;
+  height: 0.16vw;
+  background-color: #ffffff;
+}
+
+nav{
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  background-color: #0F0F11;
+}
+
+.navbar{
+  height: 1.88vw;
+  background-color: #0F0F11;
+}
+
+.navbar img{
+  position: absolute;
+  padding-left: 0.52vw;;
+}
+
+.navbuttons{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbuttons ul{
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.navbuttons li{
+  margin-left: 1.04vw;
+  margin-right: 1.04vw;
+}
+
+.navbuttons a{
+  display: flex;
+  justify-content: center;
+  font-size: 0.94vw;
+  width: 4.69vw;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "lexend";
+  margin: auto;
+}
+
+.navbuttons a:hover{
+  color: #EE0000;
+}
+
+.navbuttons a::after, .navbuttons a::before{
+  content: "";
+  background-color: #EE0000;
+  height: 0px;
+  width: 0.21vw;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.2s;
+}
+
+.navbuttons a:hover::after{
+  height: 1.15vw;
+}
+.navbuttons a:hover::before{
+  height: 1.15vw;
+}
+
+
+.slideshowgallery {
+  height: 90vh;
+  width: 100%;
+  background-position: absolute;
+  object-fit: fill;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttoncontainer{
+  position: absolute;
+    width: 100%;
+    height: 1010px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+.prev, .next {
+  cursor: pointer;
+  pointer-events: all;
+  width: 50px;
+  height: inherit;
+  color: white;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.prev{
+  background-color: #0f0f1160;
+}
+
+.next{
+  background-color: #0f0f1160;
+}
+
+.prev:hover{
+  background-color: #0f0f1199;
+} 
+
+.next:hover{
+  background-color: #0f0f1199;
+}
+
+video{
+  position: absolute;
+  z-index: -2;
+  object-fit: fill;
+  height: 100vh;
+  width: 100%;
+}
+
+
+
+.content{
+  display: flex;
+}
+
+.content a{
+  text-decoration: none;
+}
+
+.projectinfo{
+  margin-top: 90px;
+  display: flex;
+}
+
+.infocontainer{
+  background-image: url(Img/Icons/projectinfobackground.png);
+  height: 800px;
+  width: 500px;
+  margin-left: 80px;
+  position: relative;
+  backdrop-filter: blur(0.5vh);
+}
+
+.projecttext h1{
+  font-size: 44px;
+  font-family: "Instrument";
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  color: #EE0000;
+}
+
+.projecttext p{
+  font-size: 16px;
+  font-family: "Lexend";
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.highlights{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.highlightsection{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.iconborder{
+  height: 100px;
+  width: 90px;
+  background-image: url(Img/Icons/iconborder.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info h1{
+  font-family: "Instrument";
+  font-size: 24px;
+  color: #EE0000;
+  line-height: 0px;
+  padding-left: 10px;
+}
+
+.underline{
+  width: 250px;
+  height: 2px;
+  background-color: #EE0000;
+}
+
+.info h2{
+  font-family: "Lexend";
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 0px;
+  padding-left: 10px;
+}
+
+.projectbutton{
+  background-image: url(Img/Icons/projectviewbutton.png);
+  height: 800px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonstyle{
+  display: flex;
+  justify-content: center;
+}
+
+.projectbutton h1{
+  font-size: 20px;
+  color: #EE0000;
+  margin: 0;
+  text-align: center;
+}
+
+.projectbutton img{
+  width: 64px;
+  height: 64px;
+  margin: 10px;
+  transition: all 0.5s;
+}
+
+a:hover .projectbutton img{
+  transform: scale(1.1);
+}
+
+a:hover .projectbutton h1{
+  animation: text-shake 0.1s infinite linear;
+}
+
+@keyframes text-shake {
+    0% {
+        transform: translateX(0px)
+    }
+
+    25% {
+        transform: translateX(-0.5px)
+    }
+
+    50% {
+        transform: translateX(0px)
+    }
+
+    75% {
+        transform: translateX(0.5px)
+    }
+
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 32px;
+  background-color: #0F0F11;
+}
+
+.footercontent{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer h1{
+  font-size: 18px;
+  font-family: "Lexend";
+  line-height: 0px;
+}
+
+footer h1:hover{
+  color: #EE0000;
+}
+
+footer img{
+  margin: 0;
+}

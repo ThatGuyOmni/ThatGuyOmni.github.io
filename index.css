@@ -1,0 +1,261 @@
+ @font-face {
+  font-family: 'Instrument';
+  src: url(InriaSerif-Regular.ttf);
+ }
+
+ @font-face {
+  font-family: 'Lexend';
+  src: url(Lexend-Light.ttf);
+ }
+
+body{
+  margin: 0px;
+  color: #ffffff;
+  background-color: #0F0F11;
+  font-family: 'Instrument';
+    letter-spacing: 3%;
+    overflow: hidden;
+}
+
+video{
+  height: 90vh;
+  width: 100%;
+  background-position: absolute;
+  z-index: 10;
+  object-fit: fill;
+}
+
+
+.header{
+  background-color: #0F0F11;
+  height: 5.21vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header img{
+  margin: 0;
+  padding-top: 0.21vw;
+  padding-left: 0.52vw;
+  height: 5.21vw;
+  width: 5.21vw;
+  display: inline-block;
+
+}
+
+.header .Name{
+  display: inline-block;
+  width: 18.65vw;
+  height: 4.17vw;
+  margin: 0px;
+  padding-left: 0.52vw;
+}
+
+
+.header H1{
+  font-size: 2.08vw;
+  margin: 0%;
+  line-height: 2.08vw;
+}
+.header H2{
+  font-size: 2.08vw;
+  margin: 0%;
+  line-height: 2.08vw;
+  float: right;
+}
+
+.header .background{
+  margin-left: auto;
+  background-image: url(Img/Icons/HeaderBackground.png);
+  height: inherit;
+  width: 31.25vw;
+}
+
+.divider{
+  width: 100%;
+  height: 0.16vw;
+  background-color: #ffffff;
+}
+
+.navbar{
+  width: 100%;
+  height: 1.88vw;
+  background-color: #0F0F11;
+}
+
+.navbar ul{
+  height: 100%;
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.navbar li{
+  margin-left: 1.04vw;
+  margin-right: 1.04vw;
+}
+
+.navbar a{
+  display: flex;
+  justify-content: center;
+  font-size: 0.94vw;
+  width: 4.69vw;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "lexend";
+  margin: auto;
+}
+
+.navbar a:hover{
+  color: #EE0000;
+}
+
+.navbar a::after, .navbar a::before{
+  content: "";
+  background-color: #EE0000;
+  height: 0px;
+  width: 0.21vw;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.2s;
+}
+
+.navbar a:hover::after{
+  height: 1.25vw;
+}
+.navbar a:hover::before{
+  height: 1.25vw;
+}
+
+
+
+
+.quote{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68.50vw;
+  height: 10.42vw;
+  margin: 0;
+  margin-top: 16.17vw;
+  margin-left: 4.13vw;
+}
+
+.quote img{
+  height: 128px;
+  width: 128px;
+  animation: flip-with-scale 1.1s infinite linear;
+  animation: flip-with-rotate 1.1s infinite linear;
+}
+
+@keyframes flip-with-scale {
+    0% {
+        transform: perspective(150PX) scaleX(1);
+    }
+
+    100% {
+        transform: perspective(150PX) scaleX(-1);
+    }
+}
+
+@keyframes flip-with-rotate {
+    0% {
+        transform: perspective(150PX) rotateY(0);
+    }
+
+    100% {
+        transform: perspective(150PX) rotateY(180deg);
+    }
+}
+
+
+.content{
+  display: inline-block;
+  width: 60vw;
+  padding-left: 0.5vw;
+}
+
+.content H1{ 
+  font-size: 2.60vw;
+  margin: 0%;
+}
+.content H2{
+  font-size: 2.60vw;
+  margin: 0%;
+  float: right;
+}
+
+.blink-smooth {
+  animation: blink_smooth 1s infinite;
+}
+
+@keyframes blink_smooth {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.project{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5.21vw;
+}
+
+.project h1{
+  color: #ffffff;
+  font-size: 2.08vw;
+  display: block;
+}
+
+.portfoliobutton{
+  width: 10.42vw;
+  height: 10.42vw;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.portfoliobuttonbackground{
+  transition: transform 0.5s;
+  transform: scale(0);
+  opacity: 0.9;
+  
+}
+
+.portfoliobuttonarrow{
+  position: absolute;
+}
+
+.portfoliobuttonborder{
+  position: absolute;
+  transition: transform 0.5s;
+}
+
+
+.portfoliobutton:hover .portfoliobuttonborder{
+transform: rotate(60deg);
+}
+
+.portfoliobutton:hover .portfoliobuttonbackground{
+transform: scale(1);
+}

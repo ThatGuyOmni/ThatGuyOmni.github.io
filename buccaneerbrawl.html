@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potion Commotion</title>
+    <link rel="stylesheet" href="projectpage.css">
+    <link rel="icon" href="Img/Logo/flowerthang.png">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+      <a href="index.html"><img src="Img/Logo/flowerthang.png" width="32" height="32" alt="Website Icon"></a>
+      <div class="navbuttons">
+        <ul>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+    </ul>
+    </div>
+    </div>
+    <div class="divider"></div>
+</nav>
+<main>
+<div class="overview">
+    <div class="overviewcontent">
+        <img src="Img/Logo/Buccaneer Brawl Logo No Background.png" alt="Project Logo">
+        <div class="coretasks">
+            <h1>Core Tasks</h1>
+            <div class="divider"></div>
+            <div class="task">
+                <img src="Img/Icons/iconrole.png">
+                <h1>UI Research</h1>
+            </div>
+            <div class="task">
+                <img src="Img/Icons/iconrole.png">
+                <h1>User Interface Design</h1>
+            </div>
+            <div class="task">
+                <img src="Img/Icons/iconrole.png">
+                <h1>UI Implementation</h1>
+            </div>
+            <div class="task">
+                <img src="Img/Icons/iconrole.png">
+                <h1>UE5 Blueprint Functionality</h1>
+            </div>
+            <div class="task">
+                <img src="Img/Icons/iconrole.png">
+                <h1>Asset Implementation</h1>
+            </div>
+        </div>
+        <div class="nodownload"><img src="Img/Icons/iconno.png"><h1>No Download</h1><img src="Img/Icons/iconno.png"></div>
+    </div>
+    <div class="projectvideo"><iframe src="https://www.youtube.com/embed/c229KbMqOtM?si=R0MVwmJcC6aElSEm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+</div>
+<div class="filter">
+    <div class="divider"></div>
+    <div class="filterbuttoncontainer">
+        <input type="radio" name="1" checked="checked" onclick="openCity(event, 'approach')" id="defaultOpen">
+            <label for="defaultOpen">
+            <div class="filterbutton">
+            <div class="iconborder"><img src="Img/Icons/iconapproach.png"></div>
+            <div class="buttontext"><h1>Approach</h1></div></div>
+            </label>
+     
+        <input type="radio" name="1" id="2" onclick="openCity(event, 'gallery')">
+            <label for="2">
+             <div class="filterbutton">
+            <div class="iconborder"><img src="Img/Icons/iconapproach.png"></div>
+            <div class="buttontext"><h1>Design Gallery</h1></div></div>
+            </label>
+
+        <input type="radio" name="1" id="3" onclick="openCity(event, 'reflection')">
+              <label for="3">
+            <div class="filterbutton">
+            <div class="iconborder"><img src="Img/Icons/iconapproach.png"></div>
+            <div class="buttontext"><h1>Project Reflection</h1></div></div>
+            </label>
+
+    </div>
+    <div class="divider"></div>
+</div>
+
+<div class="contentcontainer">
+    <div id="approach" class="tabcontent">
+    <div class="pagecontent">
+        <div class="approachbox">
+          <div class="approachtext">
+            <div class="method"><h1>Production</h1><div class="divider"></div><p>This project had its own producer; therefore, we were able to effectively keep development to weekly sprints that we tracked with a Trello Board. Task priority was designated by a MoSCoW diagram which allowed us to easily cut content when certain deadlines grew close. </p></div>
+            <div class="design"><h1>Design</h1><div class="divider"></div><p>For this project we were tasked to create a traditional 3v3 turn-based strategy game, so a lot of research was conducted to try and capture the feel of older games within the genre.</p><p>A focus of this project was on the UX heuristic of Error Prevention; which was incorporated into the design with the use of Confirmation Boxes, Tool Tips and clear Call To Action Elements</p></div>
+            <div class="software"><h1>Software</h1><div class="divider"></div><div class="softwaregrid">
+                <img src="Img/Logo/UE5LOGO.png">
+                <img src="Img/Logo/figmalogo.png">
+                <img src="Img/Logo/mirologo.png">
+                <img src="Img/Logo/trellologo.png">
+            </div>
+            </div>
+          </div>
+          <div class="approachimg">
+            <div class="diagrambox"><h1>Final IA Diagram</h1><img src="Img/BB/bbiadiagram.png" class="diagram"></div>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="gallery" class="tabcontent">
+    <div class="pagecontent">
+            <div class="gallery">
+      <img src="Img/BB/bbingamestatuseffect.jpg" data-index="0" />
+      <img src="Img/BB/BB-HUDFINALWF.png" data-index="1" />
+      <img src="Img/BB/bbwfcharacterunselected.png" data-index="2" />
+      <img src="Img/BB/bbwfcharacterselected.png" data-index="3" />
+      <img src="Img/BB/bbwfeffectpanel.png" data-index="4" />
+      <img src="Img/BB/bbwfeffecticon.png" data-index="5" />
+      <img src="Img/BB/bbingametooltips.png" data-index="6" />
+      <img src="Img/BB/bbwftooltipsactions.png" data-index="7" />
+      <img src="Img/BB/bbwftooltipseffects.png" data-index="8" />
+      <img src="Img/BB/bbingamepopup.png" data-index="9" />
+      <img src="Img/BB/bbwfactionpopup.png" data-index="10" />
+      <img src="Img/BB/bbingamegameoptions.jpg" data-index="11" />
+      <img src="Img/BB/bbwfoptionmenu.png" data-index="12" />
+      <img src="Img/BB/bbwfoptionspanel.png" data-index="13" />
+      <img src="Img/BB/bbwfgameoptions.png" data-index="14" />
+      <img src="Img/BB/bbwfvideooptions.png" data-index="15" />
+      <img src="Img/BB/bbwfaudiooptions.png" data-index="16" />
+      <img src="Img/BB/bbingametutorial.png" data-index="17" />
+      <img src="Img/BB/bbwftutorial.png" data-index="18" />
+ 
+    </div>
+    <div class="lightbox">
+      <button class="close">&times;</button>
+      <button class="prev"></button>
+      <img src="" alt="lightbox image" />
+      <button class="next"></button>
+    </div>
+    </div>
+    </div>
+
+    <div id="reflection" class="tabcontent">
+    <div class="pagecontent">
+      <div class="reflectioncontent">
+        <div class="reflectiontext">
+          <h1>Reflection</h1>
+          <div class="divider"></div>
+          <p>As a personal note, I would say I performed well on this assignment and was able to create a fully functional note. However, there were several issues that I faced during development.</p>
+          <p>Unfortunately, due to certain delays mock ups couldn’t be completed which meant that Engine Implementation had to be done using the wireframes. Additionally; due to the tight deadlines it meant that there wasn’t much time to revise previous designs before moving on to the next sprint, which caused for some designs to be fixed in Engine if any issues arose.</p>
+        </div>
+               <div class="logoimage">
+      <img src="Img/Logo/flowerthang.png">
+        </div>
+      </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+const gallery = document.querySelector(".gallery");
+const lightbox = document.querySelector(".lightbox");
+const lightboxImage = lightbox.querySelector("img");
+const closeBtn = lightbox.querySelector(".close");
+const prevBtn = lightbox.querySelector(".prev");
+const nextBtn = lightbox.querySelector(".next");
+
+let currentIndex = 0;
+const images = Array.from(gallery.querySelectorAll("img"));
+
+// Open Lightbox
+gallery.addEventListener("click", (e) => {
+  if (e.target.tagName === "IMG") {
+    currentIndex = parseInt(e.target.dataset.index, 10);
+    updateLightbox();
+    lightbox.style.display = "flex";
+  }
+});
+
+// Close Lightbox
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+// Navigate to Previous Image
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateLightbox();
+});
+
+// Navigate to Next Image
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateLightbox();
+});
+
+// Update Lightbox Image
+function updateLightbox() {
+  const imgSrc = images[currentIndex].src;
+  lightboxImage.src = imgSrc;
+  lightboxImage.alt = images[currentIndex].alt;
+}
+
+// Close Lightbox on Outside Click
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
+
+
+</script>
+</main>
+</body>
+</html>

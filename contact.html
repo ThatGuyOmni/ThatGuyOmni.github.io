@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potion Commotion</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="Img/Logo/flowerthang.png">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+      <a href="index.html"><img src="Img/Logo/flowerthang.png" width="32" height="32" alt="Website Icon"></a>
+      <div class="navbuttons">
+        <ul>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+    </ul>
+    </div>
+    </div>
+    <div class="divider"></div>
+</nav>
+<main>
+<div class="header">
+    <div class="Name">
+  <h1>KIT BRODERICK</h1>
+  <h2>Contact</h2>
+  <div class="divider"></div>
+  </div>
+</div>
+<div class="content">
+    <div class="contacts">
+    <a  onclick="copyText1()"><div class="filterbutton"><p id="text1" class="link">Kit.Broderick@outlook.com</p>
+                <div class="iconborder"><img class="imgnormal" src="Img/Icons/iconemailhover.png"></div>
+                <div class="buttontext"><h1 class="textnormal">Email</h1><h1 class="texthover">Click To Copy</h1></div>
+    </div></a>
+
+     <a  onclick="copyText2()"><div class="filterbutton"><p id="text2" class="link">www.linkedin.com/in/kit-broderick</p>
+                <div class="buttontextalt"><h1 class="textnormal">Linkedin</h1><h1 class="texthover">Click To Copy</h1></div>
+                <div class="iconborder"><img class="imgnormal" src="Img/Icons/iconlinkedinhover.webp"></div>
+    </div></a>
+
+    <a href="Kit_CV.pdf"><div class="filterbutton">
+                <div class="iconborder"><img class="imgnormal" src="Img/Icons/iconcvhover.png"></div>
+                <div class="buttontext"><h1 class="textnormal">CV</h1><h1 class="texthover">Click To View</h1></div>
+    </div></a>
+    </div>
+</div>
+</main>
+
+    <script>
+    async function copyText1() {
+  const p = document.getElementById("text1");
+  try {
+    await navigator.clipboard.writeText(p.textContent);
+  } catch (err) {
+    alert("failed to copy" + err);
+  }
+}
+
+    async function copyText2() {
+  const p = document.getElementById("text2");
+  try {
+    await navigator.clipboard.writeText(p.textContent);
+
+  } catch (err) {
+    alert("failed to copy" + err);
+  }
+}
+</script>
+</body>
+</html>
