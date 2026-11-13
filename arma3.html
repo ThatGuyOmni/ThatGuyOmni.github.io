@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potion Commotion</title>
+    <link rel="stylesheet" href="altprojectpage.css">
+    <link rel="icon" href="Img/Logo/flowerthang.png">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+      <a href="index.html"><img src="Img/Logo/flowerthang.png" width="32" height="32" alt="Website Icon"></a>
+      <div class="navbuttons">
+        <ul>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+    </ul>
+    </div>
+    </div>
+    <div class="divider"></div>
+</nav>
+<main>
+<div class="overview">
+    <div class="overviewcontent">
+        <div class="title">
+        <h1>ARMA 3</h1>
+        <h1>Flags and Emblems</h1>
+        </div>
+        <div class="coretasks">
+            <h1>Overview</h1>
+            <div class="divider"></div>
+            <div class="task">
+                <h1>I’m a part of an Arma 3 group, and one of the things I do in the group is create emblems and flags for the different squads. I work directly with a squad lead to create a design that encapsulates their team, I work with them personally to create a brief then send over several drafts and iterations so we can collaborate together on the project.</h1>
+                <h1>It’s a really nice feeling to work on something and then see it in the game you play.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="projecthighlight"><img src="Img/arma3/ingameflag21st.png"></div>
+</div>
+
+    <div id="gallery" class="tabcontent">
+    <div class="pagecontent">
+            <div class="gallery">
+      <img src="Img/arma3/ingameemblem.jpg" data-index="0" />
+      <img src="Img/arma3/ingameflag21st.png" data-index="1" />
+      <img src="Img/arma3/flag21st.png" data-index="2" />
+      <img src="Img/arma3/flagsabre.png" data-index="3" />
+      <img src="Img/arma3/flagstrider.png" data-index="4" />
+      <img src="Img/arma3/embbrasshopper.png" data-index="5" />
+      <img src="Img/arma3/embbulwark.png" data-index="6" />
+      <img src="Img/arma3/embgunsmoke.png" data-index="7" />
+      <img src="Img/arma3/embroughneck.png" data-index="8" />
+      <img src="Img/arma3/embsabre.png" data-index="9" />
+      <img src="Img/arma3/embviceroy.png" data-index="10" />
+    </div>
+    <div class="lightbox">
+      <button class="close">&times;</button>
+      <button class="prev"></button>
+      <img src="" alt="lightbox image" />
+      <button class="next"></button>
+    </div>
+    </div>
+    </div>
+
+<script>
+const gallery = document.querySelector(".gallery");
+const lightbox = document.querySelector(".lightbox");
+const lightboxImage = lightbox.querySelector("img");
+const closeBtn = lightbox.querySelector(".close");
+const prevBtn = lightbox.querySelector(".prev");
+const nextBtn = lightbox.querySelector(".next");
+
+let currentIndex = 0;
+const images = Array.from(gallery.querySelectorAll("img"));
+
+// Open Lightbox
+gallery.addEventListener("click", (e) => {
+  if (e.target.tagName === "IMG") {
+    currentIndex = parseInt(e.target.dataset.index, 10);
+    updateLightbox();
+    lightbox.style.display = "flex";
+  }
+});
+
+// Close Lightbox
+closeBtn.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+// Navigate to Previous Image
+prevBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  updateLightbox();
+});
+
+// Navigate to Next Image
+nextBtn.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  updateLightbox();
+});
+
+// Update Lightbox Image
+function updateLightbox() {
+  const imgSrc = images[currentIndex].src;
+  lightboxImage.src = imgSrc;
+  lightboxImage.alt = images[currentIndex].alt;
+}
+
+// Close Lightbox on Outside Click
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
+
+
+</script>
+</main>
+</body>
+</html>
