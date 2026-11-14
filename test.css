@@ -19,7 +19,7 @@ body{
     width: 100vw;
 }
 
-body + div[is-visible] {
+html > div[style] {
   display: none !important;
 }
 
