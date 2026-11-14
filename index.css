@@ -15,6 +15,8 @@ body{
   font-family: 'Instrument';
     letter-spacing: 3%;
     overflow: hidden;
+    height: 100vh;
+    width: 100vw;
 }
 
 video{
@@ -23,7 +25,6 @@ video{
   background-position: absolute;
   z-index: 10;
   object-fit: fill;
-  pointer-events: none;
 }
 
 
@@ -259,4 +260,58 @@ transform: rotate(60deg);
 
 .portfoliobutton:hover .portfoliobuttonbackground{
 transform: scale(1);
+}
+
+.wrapperdesktop{
+    display: block;
+}
+
+.wrappermobile{
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+}
+
+.mobileicon{
+  height: 14vw;
+  width: 14vw;
+}
+
+.mobiletitle{
+  width: 37vw;
+  height: 9vw;
+  margin: 0px;
+  padding-left: 0.52vw;
+}
+
+.mobiletitle H1{
+  font-size: 5vw;
+  margin: 0%;
+  line-height: 5vw;
+}
+.mobiletitle H2{
+  font-size: 5vw;
+  margin: 0%;
+  line-height: 5vw;
+  float: right;
+}
+
+.mobiletext{
+  font-size: 2vw;
+}
+
+.linktext{
+  height: 10vw;
+  width: 42vw;
+  font-size: 4vw;
+  border: solid #EE0000;
+  border-radius: 0.4rem;
+  corner-shape: bevel;
+}
+
+.mobilefooter{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

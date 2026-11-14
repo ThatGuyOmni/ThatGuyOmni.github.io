@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'Instrument';
+  src: url(InriaSerif-Regular.ttf);
+ }
+
+ @font-face {
+  font-family: 'Lexend';
+  src: url(Lexend-Light.ttf);
+ }
+
+:root {
+  --step--2: clamp(0.6076rem, 0.5263rem + 0.3614vw, 0.96rem);
+  --step--1: clamp(0.7292rem, 0.6205rem + 0.4829vw, 1.2rem);
+  --step-0: clamp(0.875rem, 0.7308rem + 0.641vw, 1.5rem);
+  --step-1: clamp(1.05rem, 0.8596rem + 0.8462vw, 1.875rem);
+  --step-2: clamp(1.26rem, 1.0099rem + 1.1115vw, 2.3438rem);
+  --step-3: clamp(1.512rem, 1.1848rem + 1.454vw, 2.9297rem);
+  --step-4: clamp(1.8144rem, 1.388rem + 1.8951vw, 3.6621rem);
+  --step-5: clamp(2.1773rem, 1.6234rem + 2.4619vw, 4.5776rem);
+}
+
+body{
+  margin: 0px;
+  color: #ffffff;
+  background-color: #0F0F11;
+  font-family: 'Instrument';
+    letter-spacing: 3%;
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.divider{
+  width: 100%;
+  height: 0.16vw;
+  background-color: #ffffff;
+}
+
+nav{
+
+  z-index: 20;
+  width: 100%;
+  background-color: #0F0F11;
+}
+
+.navbar{
+  height: 1.88vw;
+  background-color: #0F0F11;
+}
+
+.navbar img{
+  position: absolute;
+  padding-left: 0.52vw;
+  height: 1.7vw;
+  width: 1.7vw;
+}
+
+.navbuttons{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbuttons ul{
+  list-style: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+.navbuttons li{
+  margin-left: 1.04vw;
+  margin-right: 1.04vw;
+}
+
+.navbuttons a{
+  display: flex;
+  justify-content: center;
+  font-size: 0.94vw;
+  width: 4.69vw;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "lexend";
+  margin: auto;
+}
+
+.navbuttons a:hover{
+  color: #EE0000;
+}
+
+.navbuttons a::after, .navbuttons a::before{
+  content: "";
+  background-color: #EE0000;
+  height: 0px;
+  width: 0.21vw;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.2s;
+}
+
+.navbuttons a:hover::after{
+  height: 1.15vw;
+}
+.navbuttons a:hover::before{
+  height: 1.15vw;
+}
+
+
+.header{
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.header .Name{
+  display: inline-block;
+  width: 32.40vw;
+  height: 8.17vw;
+  margin: 0px;
+}
+
+
+.header H1{
+  font-family: 'instrument';
+  font-size: var(--step-3);
+  margin: 0%;
+  text-align: center;
+
+}
+.header H2{
+  font-family: 'instrument';
+  font-size: var(--step-3);
+  margin: 0%;
+  margin-bottom: 2vh;
+  line-height: 4vh;
+  text-align: center;
+}
+
+
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filterbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 2vh;
+  width: 48vw;
+}
+
+.iconborder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24vh;
+  width: 12.2vw;
+  border-radius: 50% / 25%;
+  corner-shape: bevel;
+  aspect-ratio: cos(30deg);
+  border: 0.6vw solid #EE0000;
+  box-sizing: border-box;
+  transition: all 0.25s;
+}
+
+.iconborder img{
+  max-height: 13.3vh;
+  max-width: 6.8vw;
+}
+
+.buttontext{
+  width: 32vw;
+  height: 9.5vh;
+  border: 0.6vw solid #EE0000;
+  border-radius: 0em 0.8rem 0.8rem 0em;
+  corner-shape: bevel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+}
+
+.buttontextalt{
+  width: 32vw;
+  height: 9.5vh;
+  border: 0.6vw solid #EE0000;
+  border-radius: 0.8rem 0rem 0em 0.8rem;
+  corner-shape: bevel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+}
+
+.buttontext h1, .buttontextalt h1{
+  padding-left: 0.2vw;
+  font-size: var(--step-3);
+  font-family: 'lexend';
+}
+
+.texthover{
+  display: none;
+}
+
+.filterbutton:hover .textnormal{
+  display: none;
+}
+
+.filterbutton:hover .texthover{
+  display: block;
+}
+
+.imghover{
+  display: none;
+}
+
+
+
+.filterbutton:hover .imghover{
+  display: block;
+}
+
+
+.filterbutton:hover .iconborder, .filterbutton:hover .buttontext, .filterbutton:hover .buttontextalt{
+  border-color: #ffffff;
+  background-color: #EE0000;
+}
+
+.link{
+  display: none;
+}
+
+.contacts a:active .filterbutton{
+  animation: element-shake 0.15s linear;
+}
+
+@keyframes element-shake {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(5deg)
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    75% {
+        transform: rotate(-5deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
